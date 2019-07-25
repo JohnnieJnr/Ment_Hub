@@ -14,8 +14,7 @@ POSTGRES = {
    'port': '5432',
 }
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://%(user)s:\
-%(pw)s@%(host)s:%(port)s/%(db)s' % POSTGRES
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://qlzrrikepmbfvc:4d6c171454a506daa09bb5baaac877d1950cb3f9abcb70703b34dfc47bfc757f@ec2-54-221-238-248.compute-1.amazonaws.com:5432/d4ag4r1l90kuov'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
@@ -25,7 +24,7 @@ def index():
 
 @app.route('/signup')
 def signup():
-    return render_template('Signup.html')
+    return render_template('signup.html')
 
 @app.route('/main')
 def main():
