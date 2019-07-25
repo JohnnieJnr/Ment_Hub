@@ -4,15 +4,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mentor's Hub</title>
+  <title>Mentorship Hub</title>
   
 
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Candal|Alegreya+Sans">
+<<<<<<< HEAD
   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/imagehover.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
+=======
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/font-awesome.min.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/imagehover.min.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}">
+ 
+s
+>>>>>>> 1f3b389711d33c4bb3acf0ca5fc9440eac702854
 </head>
 
 <body>
@@ -26,13 +35,17 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html">Men<span style="color:navy;">tor</span>'S Hub</a>
+        <a class="navbar-brand" href="index.html">Men<span style="color:navy;">tor</span>ship Hub</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#home">Home</a></li>
           <li><a href="#courses">About</a></li>
+<<<<<<< HEAD
            <li><a href="#mentor">Your Mentor</a></li>
+=======
+          <li><a href="" data-target="#login" data-toggle="modal">Log in</a></li>
+>>>>>>> 1f3b389711d33c4bb3acf0ca5fc9440eac702854
           
         </ul>
       </div>
@@ -44,6 +57,69 @@
   <div class="modal fade" id="login" role="dialog">
     <div class="modal-dialog modal-sm">
 
+<<<<<<< HEAD
+=======
+      <!-- Modal content no 1-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title text-center form-title">Login</h4>
+        </div>
+        <div class="modal-body padtrbl">
+
+          <div class="login-box-body">
+            <p class="login-box-msg">Log in to start.</p>
+            <div class="form-group">
+
+              <form action="SignUp/Mainpage/index.html" name="" id="loginForm">
+                <div class="form-group has-feedback">
+                  <!----- username -------------->
+                  <input class="form-control" placeholder="Username" id="loginid" type="text" autocomplete="on" required="" />
+                  <span style="display:none;font-weight:bold; position:absolute;color: red;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginid"></span>
+                  <!---Already exists  ! -->
+                  <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                </div>
+                <div class="form-group has-feedback">
+                  <!----- password -------------->
+                  <input class="form-control" placeholder="Password" id="loginpsw" type="password" autocomplete="on" required="" />
+                  <span style="display:none;font-weight:bold; position:absolute;color: grey;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginpsw"></span>
+                  <!---Already exists  ! -->
+                  <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                </div>
+
+<select class="browser-default custom-select">
+  <option selected required>Select Status</option>
+  <option value="1">Mentor</option>
+  <option value="2">Mentee</option>
+</select>
+        
+                 <!---selections! -->
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="checkbox icheck">
+                      <label>
+                                <input type="checkbox" id="loginrem" > Remember Me
+                              </label>
+                    </div>
+                  </div>
+                  <div class="col-xs-12">
+                    <button type="submit" class="btn btn-green btn-block btn-flat" onclick="userlogin(action)">Login In</button>
+
+                    <br>   
+                 <p class="loginhere">
+                        Dont Have already an account ? <a href="SignUp/Signup.html" class="loginhere-link">Sign up here</a>
+                    </p>
+            
+                  </div>
+                </div>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+>>>>>>> 1f3b389711d33c4bb3acf0ca5fc9440eac702854
     </div>
   </div>
   <!--/ Modal box-->
@@ -167,12 +243,12 @@
   </footer>
   <!--/ Footer-->
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery.easing.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/custom.js"></script>
-  <script src="contactform/contactform.js"></script>
-
+ <script src="{{ url_for('static', filename='js/jquery.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='js/jquery.easing.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='js/custom.js')}}"></script>
+  <script src="{{ url_for('static', filename='contactform/contactform.js')}}"></script>
+  
 </body>
 
 </html>
