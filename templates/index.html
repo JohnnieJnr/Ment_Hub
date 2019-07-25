@@ -5,14 +5,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mentorship Hub</title>
-  
+
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Candal|Alegreya+Sans">
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/font-awesome.min.css')}}">
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/imagehover.min.css')}}">
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}">
- 
-
 </head>
 
 <body>
@@ -31,8 +29,8 @@
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#home">Home</a></li>
-          <li><a href="#events">Events</a></li>
           <li><a href="#courses">About</a></li>
+           <li><a href="#mentor">Your Mentor</a></li>
           <li><a href="" data-target="#login" data-toggle="modal">Log in</a></li>
           
         </ul>
@@ -93,7 +91,7 @@
 
                     <br>   
                  <p class="loginhere">
-                        Don't already have an account? <a href="Signup.html" class="loginhere-link">Sign up here</a>
+                        Don't already have an account? <a href="/signup" class="loginhere-link">Sign up here</a>
                     </p>
             
                   </div>
@@ -104,6 +102,7 @@
           </div>
         </div>
       </div>
+
 
     </div>
   </div>
@@ -141,219 +140,17 @@
           <hr class="bottom-line">
         </div>
  
-<!--       <div class="feature-info">
-          <div class="fea">
-            <div class="col-md-4">
-              <div class="heading pull-right">
-                <h4>Latest </h4>
-                <p>#########.</p>
-              </div>
-              <div class="fea-img pull-left">
-                <i class="fa fa-css3"></i>
-              </div>
-            </div>
-          </div>
-          <div class="fea">
-            <div class="col-md-4">
-              <div class="heading pull-right">
-                <h4>Toons Background</h4>
-                <p>################.</p>
-              </div>
-              <div class="fea-img pull-left">
-                <i class="fa fa-drupal"></i>
-              </div>
-            </div>
-          </div>
-          <div class="fea">
-            <div class="col-md-4">
-              <div class="heading pull-right">
-                <h4>Award Winning </h4>
-                <p>###########################.</p>
-              </div>
-              <div class="fea-img pull-left">
-                <i class="fa fa-trophy"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
--->
-
     </div>
   </section>
   <!--/ home-->
-  <!--Events-->
-  <section id="events" class="section-padding">
+  <!--Mentor-->
+  <section id="mentor" class="section-padding">
     <div class="container">
-      <!--<div class="row">
-        <div class="col-md-6">
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-            <div class="orga-stru">
-             <h3>65%</h3>
-              <p>Say NO!!</p>
-              <i class="fa fa-male"></i>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-            <div class="orga-stru">
-              <h3>20%</h3>
-              <p>Says Yes!!</p>
-              <i class="fa fa-male"></i>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-            <div class="orga-stru">
-              <h3>15%</h3>
-              <p>Can't Say!!</p>
-              <i class="fa fa-male"></i>
-            </div>
-          </div>
-        </div> 
-        <div class="col-md-6">
-          <div class="detail-info">
-            <hgroup>
-              <h3 class="det-txt"> Is inclusive quality education affordable?</h3>
-              <h4 class="sm-txt">(Revised and Updated for 2019)</h4>
-            </hgroup>
-            <p class="det-p"></p>
-          </div>
-        </div>
+		<fieldset style="width:100%; height:500px; border:0.5px solid black;"></fieldset>
       </div>
-    </div>-->
-  </section>
-  <!--/ events-->
-
-  <!--work-shop-->
-  <section id="work-shop" class="section-padding">
-    <div class="container">
-      <div class="row">
-        <div class="header-section text-center">
-          <h2>Upcoming Workshop</h2>
-         <!-- <p>####<br> ###</p>
-          <hr class="bottom-line">
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="service-box text-center">
-            <div class="icon-box">
-              <i class="fa fa-html5 color-green"></i>
-            </div>
-            <div class="icon-text">
-              <h4 class="ser-text">Mentor HTML5 Workshop</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="service-box text-center">
-            <div class="icon-box">
-              <i class="fa fa-css3 color-green"></i>
-            </div>
-            <div class="icon-text">
-              <h4 class="ser-text">Mentor CSS3 Workshop</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="service-box text-center">
-            <div class="icon-box">
-              <i class="fa fa-joomla color-green"></i>
-            </div>
-            <div class="icon-text">
-              <h4 class="ser-text">Mentor Joomla Workshop</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>-->
   </section>
   
-  
-  
-  <!--Site Developers-->
-  <section id="Site Developers" class="section-padding">
-    <div class="container">
-      <div class="row">
-        <div class="header-section text-center">
-          <h2>Site Developers</h2>
-          <p><br> </p>
-          <hr class="bottom-line">
-        </div>
-        
-        <!--Team -->
-        <!-- One -->
-        <div class="col-lg-3 col-md-3">
-          <div class="pm-staff-profile-container">
-            <div class="pm-staff-profile-image-wrapper text-center">
-              <div class="pm-staff-profile-image">
-                <img src="    " alt="" class="img-thumbnail img-circle" />
-              </div>
-            </div>
-            
-            <div class="pm-staff-profile-details text-center">
-              <p class="pm-staff-profile-name">Mark</p>
-              <p class="pm-staff-profile-title">Lead Software Engineer</p>
-
-              <p class="pm-staff-profile-bio">###### </p>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Two -->
-        <div class="col-lg-3 col-md-3">
-          <div class="pm-staff-profile-container">
-            <div class="pm-staff-profile-image-wrapper text-center">
-              <div class="pm-staff-profile-image">
-                <img src="    " alt="" class="img-thumbnail img-circle" />
-              </div>
-            </div>
-            
-            <div class="pm-staff-profile-details text-center">
-              <p class="pm-staff-profile-name">Johnnie</p>
-              <p class="pm-staff-profile-title">Lead Software Engineer</p>
-
-              <p class="pm-staff-profile-bio">###### </p>
-            </div>
-          </div>
-        </div>
-        
-         <!-- Three -->
-        <div class="col-lg-3 col-md-3">
-          <div class="pm-staff-profile-container">
-            <div class="pm-staff-profile-image-wrapper text-center">
-              <div class="pm-staff-profile-image">
-                <img src="    " alt="" class="img-thumbnail img-circle" />
-              </div>
-            </div>
-            
-            <div class="pm-staff-profile-details text-center">
-              <p class="pm-staff-profile-name">Mathew</p>
-              <p class="pm-staff-profile-title">Lead Software Engineer</p>
-
-              <p class="pm-staff-profile-bio">###### </p>
-            </div>
-          </div>
-        </div>
-            
-           <!-- Four -->  
-            <div class="col-lg-3 col-md-3">
-            <div class="pm-staff-profile-container">
-              <div class="pm-staff-profile-image-wrapper text-center">
-                <div class="pm-staff-profile-image">
-                  <img src="    " alt="" class="img-thumbnail img-circle" />
-                </div>
-              </div>
-              
-              <div class="pm-staff-profile-details text-center">
-                <p class="pm-staff-profile-name">Selma</p>
-                <p class="pm-staff-profile-title">Lead Software Engineer</p>
-
-                <p class="pm-staff-profile-bio">###### </p>
-              </div>
-            </div>
-          </div>
-  </section>
-  
-  
-  
+<!---Mentor--->
 
   <!--About-->
   <section id="courses" class="section-padding">
@@ -367,85 +164,7 @@
         </div>
       </div>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 col-sm-6 padleft-right">
-          <figure class="imghvr-fold-up">
-            <img src="../static/img/course01.jpg" class="img-responsive">
-            <figcaption>
-              <h3>Engineering</h3>
-              <p>Engineering is the creative application of science, mathematical methods,
-               and empirical evidence to the innovation, design, construction, 
-               operation and maintenance of structures, machines, materials, devices, 
-               systems, processes, and organizations.</p>
-            </figcaption>
-            <a href="#"></a>
-          </figure>
-        </div>
-        <div class="col-md-4 col-sm-6 padleft-right">
-          <figure class="imghvr-fold-up">
-            <img src="../static/img/course02.jpeg" class="img-responsive">
-            <figcaption>
-              <h3>Medicine</h3>
-              <p>Medicine is the science and practice of the diagnosis, 
-              treatment, and prevention of disease. Medicine encompasses
-               a variety of health care practices evolved to maintain 
-               and restore health by the prevention and treatment of 
-               illness.</p>
-            </figcaption>
-            <a href="#"></a>
-          </figure>
-        </div>
-        <div class="col-md-4 col-sm-6 padleft-right">
-          <figure class="imghvr-fold-up">
-            <img src="../static/img/course03.jpg" class="img-responsive">
-            <figcaption>
-              <h3>Art</h3>
-              <p>Art is a diverse range of human activities in creating visual,
-               auditory or performing artifacts (artworks), expressing the 
-               author's imaginative, conceptual ideas, or technical skill, 
-               intended to be appreciated for their beauty or emotional power</p>
-            </figcaption>
-            <a href="#"></a>
-          </figure>
-        </div>
-        <div class="col-md-4 col-sm-6 padleft-right">
-          <figure class="imghvr-fold-up">
-            <img src="../static/img/course04.jpeg" class="img-responsive">
-            <figcaption>
-              <h3>Social Science</h3>
-              <p>Social science is a major category of academic disciplines, 
-              concerned with society and the relationships among individuals 
-              within a society. Social science as a whole has many branches, 
-              each of which is considered a social science.</p>
-            </figcaption>
-            <a href="######"></a>
-          </figure>
-        </div>
-        <div class="col-md-4 col-sm-6 padleft-right">
-          <figure class="imghvr-fold-up">
-            <img src="../static/img/course05.jpeg" class="img-responsive">
-            <figcaption>
-              <h3>Computer Science</h3>
-              <p>Computer science is the study of the theory, experimentation,
-               and engineering that form the basis for the design and use of computers. </p>
-            </figcaption>
-            <a href="######"></a>
-          </figure>
-        </div>
-        <div class="col-md-4 col-sm-6 padleft-right">
-          <figure class="imghvr-fold-up">
-            <img src="../static/img/course06.jpeg" class="img-responsive">
-            <figcaption>
-              <h3>Law</h3>
-              <p>Law is a system of rules that are created and enforced through
-               social or governmental institutions to regulate behavior.</p>
-            </figcaption>
-            <a href="######"></a>
-          </figure>
-        </div>
-      </div>
-    </div>
+    
   </section>
 
        
@@ -508,7 +227,7 @@
   </footer>
   <!--/ Footer-->
 
- <script src="{{ url_for('static', filename='js/jquery.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='js/jquery.min.js')}}"></script>
   <script src="{{ url_for('static', filename='js/jquery.easing.min.js')}}"></script>
   <script src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>
   <script src="{{ url_for('static', filename='js/custom.js')}}"></script>
