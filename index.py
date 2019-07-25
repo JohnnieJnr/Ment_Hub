@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, url_for
 from flask_sqlalchemy import SQLAlchemy
 import os
 
@@ -6,7 +6,7 @@ app = Flask(__name__, static_url_path='/static')
 # will be set on heroku
 # PASSWORD = os.environ.get('POSTGRES_PASS')
 
-#POSTGRES = {
+POSTGRES = {
    'user': 'postgres',
    'pw': 'qwerty',
    'db': 'mentor_database',
@@ -26,6 +26,10 @@ def index():
 @app.route('/signup')
 def signup():
     return render_template('Signup.html')
+
+@app.route('/main')
+def main():
+    return render_template('mainpage.html')
 
 #@app.route('/all_mentors')
 #def all_mentors():
