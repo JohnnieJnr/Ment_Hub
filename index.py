@@ -56,7 +56,7 @@ def index():
 #        return '<mentor %r>' % self.name
 
 
-@app.route('/new_mentor', methods=['POST'] ['GET'])
+@app.route('/new_mentor', methods=['POST'])
 def new_mentor():
     email = None
     if request.method == 'POST':
