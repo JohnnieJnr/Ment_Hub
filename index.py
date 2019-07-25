@@ -21,6 +21,10 @@ db = SQLAlchemy(app)
 
 @app.route('/')
 def index():
+    return render_template('index.html')
+
+@app.route('/signup')
+def signup():
     return render_template('Signup.html')
 
 #@app.route('/all_mentors')
@@ -56,7 +60,7 @@ def index():
 #        return '<mentor %r>' % self.name
 
 
-@app.route('/new_mentor', methods=['POST'] ['GET'])
+@app.route('/new_mentor', methods=['POST'])
 def new_mentor():
     email = None
     if request.method == 'POST':
