@@ -6,7 +6,7 @@ app = Flask(__name__, static_url_path='/static')
 # will be set on heroku
 # PASSWORD = os.environ.get('POSTGRES_PASS')
 
-POSTGRES = {
+#POSTGRES = {
    'user': 'postgres',
    'pw': 'qwerty',
    'db': 'mentor_database',
