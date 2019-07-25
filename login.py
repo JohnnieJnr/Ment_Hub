@@ -20,33 +20,33 @@ db = SQLAlchemy(app)
 def index():
     return render_template('index.html')
 
-#class Mentor(db.Model):
-#    __tablename__ = "mentor"
-#    mentor_id = db.Column(db.Integer, primary_key=True)
-#    name = db.Column(db.String(100), nullable=False)
-#    email = db.Column(db.String(100), nullable=False)
-#    expertise = db.Column(db.String(200), nullable=False)
-#    mentee_capacity = db.Column(db.Integer, nullable=False)
-#    interest = db.Column(db.Text, nullable=False)
-#    description = db.Column(db.Text, nullable=True)
-#    password = db.Column(db.String(50), nullable=False)
-#
-#    def __init__(self, mentor_id, name, email, expertise, mentee_capacity, interest, description, password):
-#        self.mentor_id = mentor_id
-#        self.name = name
-#        self.email = email
-#        self.expertise = expertise
-#        self.mentee_capacity = mentee_capacity
-#        self.interest = interest
-#        self.description = description
-#        self.password = password
-#
-#    def __repr__(self):
-#        return '<mentor %r>' % self.name
+class Mentor(db.Model):
+    __tablename__ = "mentor"
+    mentor_id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(100), nullable=False)
+    email = db.Column(db.String(100), nullable=False)
+    expertise = db.Column(db.String(200), nullable=False)
+    mentee_capacity = db.Column(db.Integer, nullable=False)
+    interest = db.Column(db.Text, nullable=False)
+    description = db.Column(db.Text, nullable=True)
+    password = db.Column(db.String(50), nullable=False)
+
+    def __init__(self, mentor_id, name, email, expertise, mentee_capacity, interest, description, password):
+        self.mentor_id = mentor_id
+        self.name = name
+        self.email = email
+        self.expertise = expertise
+        self.mentee_capacity = mentee_capacity
+        self.interest = interest
+        self.description = description
+        self.password = password
+
+    def __repr__(self):
+        return '<mentor %r>' % self.name
      
-@app.route('/new_mentor', methods=['POST'])
+@app.route('/new_mentor', methods=['GET','POST'])
 def new_mentor():
-    email = None
+    #email = None
     if request.method == 'POST':
         email = request.form['email']
         # Check that email does not already exist (not a great query, but works)
