@@ -26,8 +26,8 @@ def index():
 def signup():
     return render_template('signup.html')
 
-@app.route('/main')
-def main():
+@app.route('/mainpage')
+def mainpage():
     return render_template('mainpage.html')
 
 #@app.route('/all_mentors')
