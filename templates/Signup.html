@@ -8,9 +8,19 @@
 
     <!-- Font Icon -->
     <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Signup/fonts/material-icon/css/material-design-iconic-font.min.css')}}">
 
     <!-- Main css -->
-    <link rel="stylesheet" href="css/style.css">
+    <!--<link rel="stylesheet" href="css/style.css">-->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Signup/css/style.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Signup/fonts/material-icon/css/material-design-iconic-font.min.css')}}">
+    <!--<link rel="stylesheet" href="../static/Signup/fonts/material-icon/css/material-design-iconic-font.min.css">-->
+
+    <!-- Main css -->
+    <!--<link rel="stylesheet" href="../static/Signup/css/style.css">-->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Signup/css/style.css')}}">
+    
+
    
    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
    <script type="text/javascript">
@@ -30,13 +40,20 @@
 </head>
 <body>
 	
-<!-- <img src="images/signup-bg.jpg" alt=""> -->
     <div class="main">
         <section class="signup"> 
             <div class="container">
                 <div class="signup-content">
                     <form method="POST" id="signup-form" class="signup-form" action="Mainpage/index.html" ;
                        <center> <h2 class="form-title">Create account</h2></center>
+
+    <div class="main">
+
+        <section class="signup">
+            <div class="container">
+                <div class="signup-content">
+                    <form method="POST" id="signup-form" class="signup-form" action="index.html" ;
+                        <h2 class="form-title">Create account</h2>
                         <div class="form-group">
                             <input type="text" class="form-input" name="name" id="name" placeholder="Enter Your Name" required />
                         </div>
@@ -78,13 +95,14 @@
                         <div class="form-group">
                             <input type="submit" name="submit" id="btnSubmit" id="submit"class="form-submit" value="Sign up"/>
                         </div>
-                
         </section>
-
     </div>
 
-    <!-- JS -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="js/main.js"></script>
-</body><!-- This templates was made by Colorlib-->
+</body>
+
+    <script src="../static/Signup/vendor/jquery/jquery.min.js"></script>
+    <script src="../static/Signup/js/main.js"></script>
+</body>
 </html>

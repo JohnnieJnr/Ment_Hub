@@ -55,7 +55,7 @@ def new_mentor():
             db.session.add(me)
             db.session.commit()
             return redirect(url_for('index'))
-    return render_template('SignUp/Signup.html')
+    return render_template('Signup.html')
     
 if __name__ == '__main__':
     app.run(port=5001, debug=True)
