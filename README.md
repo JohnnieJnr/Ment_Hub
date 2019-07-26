@@ -32,6 +32,8 @@ Technologies used:
             
             Python
             
+            Flask
+            
             CSS
             
             Bootstrap
