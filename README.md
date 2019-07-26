@@ -9,7 +9,7 @@ Our group is called Mentors; we're a team of four, and we're Global Coders:
     
     Johnnie Oduro Jnr - the integration lead
     
-    Matthew E. Tenu
+    Mathew Yao E. Tenu
     
     Mark Ahiabor
     
@@ -17,7 +17,7 @@ Work Structure
   
   Front end: 
              
-             Matthew E. Tenu
+             Mathew Yao E. Tenu
              
              Selma Nunana Agbevanu
   
