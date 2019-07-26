@@ -25,4 +25,16 @@ Work Structure
   
              Johnnie Oduro Jnr
              
-             Mark Ahiabor
+           
+Technologies used:
+
+            HTML
+            
+            Python
+            
+            CSS
+            
+            Bootstrap
+            
+            Javascript
+            
