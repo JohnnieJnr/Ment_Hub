@@ -1,4 +1,3 @@
-{%block content%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,21 +7,16 @@
     <title>Sign Up Form </title>
 
     <!-- Font Icon -->
-    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Signup/fonts/material-icon/css/material-design-iconic-font.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='fonts/material-icon/css/material-design-iconic-font.min.css')}}">
 
     <!-- Main css -->
-    <!--<link rel="stylesheet" href="css/style.css">-->
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Signup/css/style.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Signup/fonts/material-icon/css/material-design-iconic-font.min.css')}}">
-    <!--<link rel="stylesheet" href="../static/Signup/fonts/material-icon/css/material-design-iconic-font.min.css">-->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='fonts/material-icon/css/material-design-iconic-font.min.css')}}">
 
     <!-- Main css -->
-    <!--<link rel="stylesheet" href="../static/Signup/css/style.css">-->
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Signup/css/style.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
     
-
-   
+    
    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
    <script type="text/javascript">
     $(function () {
@@ -37,51 +31,34 @@
         });
     });
 </script>
-    
 </head>
-<body>
-    
+<body style="background-color:black;">    
     <div class="main">
         <section class="signup"> 
             <div class="container">
                 <div class="signup-content">
-                    <form method="POST" id="signup-form" class="signup-form" action="Mainpage/index.html" ;
+                    <form method="POST ,GET" id="signup-form" class="signup-form" action="mainpage" ;
                        <center> <h2 class="form-title">Create account</h2></center>
-
-    <div class="main">
-
-        <section class="signup">
-            <div class="container">
-                <div class="signup-content">
-                    <form method="POST" id="signup-form" class="signup-form" action="index.html" ;
-                        <h2 class="form-title">Create account</h2>
                         <div class="form-group">
                             <input type="text" class="form-input" name="name" id="name" placeholder="Enter Your Name" required />
                         </div>
                         <div class="form-group">
                             <input type="email" class="form-input" name="email" id="email" placeholder="Enter Your Email"required />
                         </div>
-
                         <div class="form-group">
                             <input type="text" class="form-input" name="expertise" id="expertise" placeholder="Whats Your Expertise"/>
                         </div>
-
                         <div class="form-group">
                             <input type="Number" class="form-input" name="mentee_capacity" id="mentee_capacity" placeholder="Mentee capacity"/>
                         </div>
-                        
-                        
                         <div class="form-group">
                             <input type="text" class="form-input" name="interest" id="interest" placeholder="Interest"/ required>
-                        </div>
-                        
-                        
+                        </div>                                
                         <div class="form-group">
                      <label for="discription" id="discription"></label>
                     <textarea class="form-group" rows="10" style="width:400px; border:0.5px solid black; border-top-right-radius:30px; font-family:tahoma;"
                           placeholder="Discription of Interest" required></textarea>
                           </div>
-
                         <div class="form-group">
                             <input type="text" class="form-input" name="password" id="txtPassword" placeholder="Enter Your Password" required name="pwd1"/>
                             <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
@@ -98,13 +75,7 @@
                         </div>
         </section>
     </div>
-
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="js/main.js"></script>
-</body>
-
-    <script src="../static/Signup/vendor/jquery/jquery.min.js"></script>
-    <script src="../static/Signup/js/main.js"></script>
+    <script src="{{ url_for('static', filename='vendor/js/jquery.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/main.js')}}"></script>
 </body>
 </html>
-{%endblock content%}

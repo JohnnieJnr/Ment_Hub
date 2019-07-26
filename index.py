@@ -74,7 +74,7 @@ def new_mentor():
             db.session.add(reg)
             db.session.commit()
             return render_template('success.html')
-    return render_template('index.html')
+    return render_template('mainpage.html')
 
 if __name__ == '__main__':
     app.run(port=5001, debug=True)
