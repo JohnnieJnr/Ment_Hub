@@ -38,3 +38,5 @@ Technologies used:
             
             Javascript
             
+            Postgres
+            
