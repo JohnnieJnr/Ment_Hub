@@ -5,26 +5,13 @@ The project is targeted at connecting youth and infants in the working world wit
 Our group likes the idea of expanding this project even after the Global Code Summer Camp.
 Our group is called Mentors; we're a team of four, and we're Global Coders:
 
-    Selma Nunana Agbevanu - the leader
+    Selma Nunana Agbevanu
     
-    Johnnie Oduro Jnr - the integration lead
+    Johnnie Oduro Jnr 
     
     Mathew Yao E. Tenu
     
     Mark Ahiabor
-    
-Work Structure
-  
-  Front end: 
-             
-             Mathew Yao E. Tenu
-             
-             Selma Nunana Agbevanu
-  
-  Back end:  
-  
-             Johnnie Oduro Jnr
-             
            
 Technologies used:
 
